@@ -1,5 +1,5 @@
 apiVersion: "1"
-version: "1"
+version: "2"
 description: "A bundle"
 id: "my-test-bundle"
 availabilityPattern: ".*"
