@@ -1,0 +1,26 @@
+removeStrategy:
+  rbac: SYNC
+  items: SYNC
+items:
+  - kind: pipeline
+    name: pipeline-hello
+    displayName: Hello World
+    description: ''
+    concurrentBuild: true
+    definition:
+      cpsFlowDefinition:
+        sandbox: true
+        script: |-
+          pipeline {
+              agent any
+          
+              stages {
+                  stage('Hello') {
+                      steps {
+                          echo 'Hello World'
+                      }
+                  }
+              }
+          }
+    disabled: false
+    resumeBlocked: false
